@@ -1,15 +1,9 @@
-function receivesAFunction(callback) {
-    return callback();
+const receivesAFunction = (callback) => callback();
+
+const returnsANamedFunction = () => {
+    return aNamedFunction = () => "I am a named function!";
 }
 
-function returnsANamedFunction() {
-    return aNamedFunction = () => "I am a named function!";
-};
-
-function returnsAnAnonymousFunction() {
+const returnsAnAnonymousFunction = () => {
     return () => "I am an anonymous function!";
 }
-
-receivesAFunction();
-returnsANamedFunction();
-returnsAnAnonymousFunction();

@@ -1,11 +1,16 @@
-// code your solution in this file!
-
-const receivesAFunction = (callback) => callback();
+function receivesAFunction(callback) {
+    callback();
+}
 
 const returnsANamedFunction = () => {
-    return aNamedFunction = () => "I am a named function!";
+    function aNamedFunction() {
+
+    }
+    return aNamedFunction;
 }
 
 const returnsAnAnonymousFunction = () => {
-    return () => "I am an anonymous function!";
+    return function() {
+        
+    }
 }

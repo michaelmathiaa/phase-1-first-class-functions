@@ -1,5 +1,3 @@
-const callback = () => 1;
-
 const receivesAFunction = (callback) => callback();
 
 const returnsANamedFunction = () => {
